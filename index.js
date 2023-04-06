@@ -45,7 +45,7 @@ app.get('/',function(req,res){
             //console.log('error in fetching contacts from db');
             //return;
         
-        return res.render('home',{tittle:"My contact List dummy",
+        return res.render('home',{tittle:"My contact List",
     contact_list:contacts
 });
     })
