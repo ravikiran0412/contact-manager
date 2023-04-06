@@ -1,6 +1,15 @@
 body{
+    background-color:antiquewhite;
+    background: -webkit-linear-gradient(to top, #02151c, #081e26, #e75507);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #042d3c, #7b450b, #051d2a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
     margin: 0;
     font-family: sans-serif;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    height: auto;
 }
 
    #contactlistcontainer ul{
@@ -41,17 +50,31 @@ body{
    }
   #page-heading{
     text-align: center;
+    color: blanchedalmond;
   }
 
   #contact_form{
-    text-align: center;
+    width:25em;
+    padding:1em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: -webkit-linear-gradient(to top, #e22a20, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #ff918a94, #33535e);
+    background: linear-gradient(to top, #e6060647, #330e8a40);
+    background: linear-gradient(to top, #c3c3c342, #bfbfbf8c);
+    margin-top:1em;
+
   }
 
   #addbutton{
-    background-color: gray;
+    background-color: rgb(47, 63, 22);
     border: none;
     color: white;
     padding: 15px 15px;
     text-decoration: none;
+    
     
   }
