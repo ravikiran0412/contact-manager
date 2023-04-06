@@ -42,11 +42,8 @@ body{
     text-align: center;
     margin-top: 5px;
    }
-   .contact .delete-button a{
-    color: rgb(228, 158, 158);
-    background-color: red;
-
-   }
+   
+   
    #trash-icon{
     color: #b6c1cc;
    }
@@ -76,10 +73,11 @@ body{
   }
 
   #addbutton{
-    background-color: rgb(150, 162, 131);
+    background-color: rgb(110, 111, 108);
     border: none;
-    color:brown;
-    padding: 10px 12px;
+    border-radius: 10px;
+    color:rgb(6, 5, 5);
+    padding: 19px 12px;
     text-decoration: none;
     
     
