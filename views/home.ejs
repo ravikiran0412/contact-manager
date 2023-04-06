@@ -11,32 +11,31 @@
             <i class="fas fa-address-book"> </i>
            My contact lsit
         </h1>
-        <div id="contaclistcontainer">
-            <ul> 
-                <% for (let i of contact_list){%>
-
-                    <li class="contact">
-                        <div class="details">
-                        <p ><%= i. name%></p>
-                        <p ><%= i.phone%></p>
-                    </div>
-                    <div class="delete-button">
-                        <a href="/delete-contact/?id=<%=i._id %>">
-                            <i class="fas fa-window-close"> </i>
-
-                        </a> 
-
-                    </div>
-                    </li>
-               <% } %>
+        <div>
+            <ul>
+                <% for(let i of contact_list){ %> 
+                   <Li class="contact">
+                        <P><%= i.name %></P>
+                        <P><%= i.phone %></P>
+                    </Li>     
+                   <a href="delete-contact/?id=<%= i._id %>">
+                    <i class = 'fa fa-trash' id="trash-icon">  </i>
+                   </a>
+                   
+                <%}%> 
             </ul>
-        </div>
-        
+        </div>  
+
+                <hr style="width: 80%;">
+        <div>
         <form id="contact_form" action="/create-contact" method="post">
-            <input type="text" name="name" placeholder="enter name" required >
-            <input type="number" name="phone" placeholder="enter phoe" required>
+            <div>
+            <input type="text" name="name" placeholder="Enter Name" required >
+            <input type="number" name="phone" placeholder="Enter Phone Number" required>
+           </div>
             <button type="submit" id="addbutton">Add contact</button>
         </form>
+        </div>
         <script type="text/javascript" src="/js/home.js"></script>
     </body>
 </html>
